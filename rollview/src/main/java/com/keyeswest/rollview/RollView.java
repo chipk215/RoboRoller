@@ -10,6 +10,7 @@ import android.graphics.RadialGradient;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.Typeface;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -92,6 +93,22 @@ public class RollView extends View {
     private void initialize(){
         initValues();
         initPaint();
+    }
+
+    /**
+     * Move the needle to a new position
+     * @param value - the new angle
+     */
+    public void moveToValue(float value) {
+        this.newNeedlePosition = value;
+        //Determine in call is on UI thread
+        if (Looper.myLooper() == Looper.getMainLooper()){
+            // on the UI thread so force an update
+            invalidate();
+        }else{
+            // not on the ui thread so post an update request
+            postInvalidate();
+        }
     }
 
 

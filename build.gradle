@@ -20,6 +20,10 @@ allprojects {
         google()
         jcenter()
     }
+
+    ext{
+        timberVersion = '4.7.0'
+    }
 }
 
 task clean(type: Delete) {
