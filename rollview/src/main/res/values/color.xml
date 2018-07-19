@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="facePaint">#ffffffff</color>
+    <color name="rimCirclePaint">#4f333633</color>
+    <color name="needleColor">#ff0000</color>
+</resources>
