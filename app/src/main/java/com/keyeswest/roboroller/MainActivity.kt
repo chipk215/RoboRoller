@@ -38,7 +38,10 @@ class MainActivity : AppCompatActivity() , Orientation.Listener{
             val thread = object : Thread() {
                 override fun run() {
                     try {
-                        RabbitSender.getInstance().sendRollAngle(-limitedRoll)
+
+                        // +90 CCW rotation from center point of 0 degrees
+                        // -90 CW rotation from center point of 0 degrees
+                        RabbitSender.getInstance().sendRollAngle(limitedRoll)
                     } catch (ex: Exception) {
                         Timber.e(ex.toString())
                     }
