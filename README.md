@@ -25,11 +25,18 @@ Finally, as noted, the last functional aspect of the Android app is to send the 
 ### Raspberry Pi
 I used a Model B+ Raspebrry Pi, model year 2014, leftover from a previous project which I used to drive the servo. I used the [pi4j](http://pi4j.com/) Java library for writing the pi code. Any of the Raspberry models should be adequate for the solution that have a PWM output pin. 
 
+### Raspberry Pi Software
+(TODO)
+
+
 ### Servo
 An inexpensive (cheap) servo was used to track the roll angle. Specifically, a [TowerPro SG-5010](https://tinyurl.com/ya6trczd) which is spec'd to have a 180&deg; range of motion. The actual or achieved range of motion will be discussed in the details below.
 
+(TODO)
+
 ### RabbitMQ Server
 The roll angle of the Android device is transmitted to the Raspberry Pi using a RabbitMQ message broker. I hosted the RabbitMQ server on an iMac so that the Android code and Raspeberry Pi code could be developed without requiring both platforms to be up and running all of the time. Initially, I also had some reservation about hosting the RabbitMQ server on the Pi but it appears from other project reviews on the web that the Pi is more than capable of hosting the RabbitMQ server. Something to investigate if interested.
+
 
 
 
