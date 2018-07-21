@@ -2,6 +2,7 @@
 RoboRoller is a toy Android and Raspberry Pi application. The roll angle of the Android device is obtained using the Android hardware SensorManager library. The roll angle of the Android is displayed using a custom view on the Android device. The angle is then sent to a Raspberry Pi which positions a servo to the same roll angle. If the Android device and servo are aligned so that the axes of roll rotation for both devices are parallel then the servo will rotate in concert with the Android device as the Android is rotated about its longitudinal roll axis.  
 
 ## Major System Components
+![System Components](docs/readmeImages/system.png)
 
 ### Android Device
 The Android app was developed on a phone but could be modified to run on a tablet. The app is locked to the portrait orientation for convenience. There is nothing really noteworthy about the device.
