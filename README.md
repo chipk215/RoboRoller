@@ -69,7 +69,7 @@ The system response characterizes the ability of the servo to track the roll ang
 
 A couple of contributing errors come into play. There is propagation error corresponding to the delay in detecting and transmitting the roll angle on the android to the servo through the message broker and there is a limit to how fast the servo can be updated with new servo positions.
 
-The 50 Hz PWM frequency establishes the maximum update rate of 50 samples per second. The servo is also limited by how fast it can rotate. The TowerPro SG-5010 quotes an average speed of 0.16sec/60&deg;, which seems to be an inverted velocity spec (radial velocity should be in degrees/sec) but approximately corresponds to 1 second for the servo to rotate across its full 180&deg; range.  The update rate and radial velocity of the servo obviously limits how fast we can rotate the android device across 18-&deg; of rotation.
+The 50 Hz PWM frequency establishes the maximum update rate of 50 samples per second. The servo is also limited by how fast it can rotate. The TowerPro SG-5010 quotes an average speed of 0.16sec/60&deg;, which seems to be an inverted velocity spec (radial velocity should be in degrees/sec) but approximately corresponds to 1 second for the servo to rotate across its full 180&deg; range.  The update rate and radial velocity of the servo obviously limits how fast we can rotate the android device across 180&deg; of rotation.
 
 More to come...
 
